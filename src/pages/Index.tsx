@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import FeaturedPizzas from "@/components/FeaturedPizzas";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import AboutSection from "@/components/AboutSection";
+import ReviewsSection from "@/components/ReviewsSection";
+import MenuPreview from "@/components/MenuPreview";
+import LocationSection from "@/components/LocationSection";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
+import MobileOrderButton from "@/components/MobileOrderButton";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navbar />
+      <HeroSection />
+      <FeaturedPizzas />
+      <WhyChooseUs />
+      <AboutSection />
+      <ReviewsSection />
+      <MenuPreview />
+      <LocationSection />
+      <FinalCTA />
+      <Footer />
+      <MobileOrderButton />
     </div>
   );
 };
